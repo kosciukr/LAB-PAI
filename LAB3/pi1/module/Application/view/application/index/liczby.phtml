@@ -1,0 +1,22 @@
+<h1>Liczby wygenerowane przez metodę generuj()</h1>
+<div style="width: 50%; float: left;">
+<ol>
+    <p style="color: darkgreen; font-size: larger">Parzyste:</p>
+    <?php foreach ($this->liczby as $parzyste ):?>
+         <?php
+            if($parzyste%2==0) echo "<li><b style='color:green'>$parzyste</b></li>"
+            ?>
+    <?php endforeach?>
+</ol>
+</div>
+<div style="width: 50%; float: left;">
+<ol>
+    <p style="color:darkred; font-size: larger"> Nieparzyste:</p>
+    <?php foreach ($this->liczby as $nieparzyste ):?>
+        <?php
+            if($nieparzyste%2!=0) echo "<li><b style='color:red'>$nieparzyste</b></li>"
+            ?>
+    <?php endforeach?>
+</ol>
+</div>
+<br>
