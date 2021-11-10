@@ -1,0 +1,14 @@
+Instrukcja:
+
+1 Przenieść folder pi do htdocs
+
+2 Z poziomu tego folderu w konsoli wykonać polecenie "composer install"
+
+3 Uruchomić xampp_start
+
+5 Obsługa z poziomu
+http://localhost/pai/public/
+
+
+
+W przypadku problemów należy w pliku php.ini usunąć znak ";" z linijki ";extension=intl" i zrestartować xamppa

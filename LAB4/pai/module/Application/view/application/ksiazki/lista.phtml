@@ -1,0 +1,35 @@
+<h1>Lista książek</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Tytuł</th>
+        <th>Autor</th>
+        <th>Cena</th>
+        <th>Liczba stron</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($this->ksiazki as $ksiazka): ?>
+        <tr>
+            <td><?= $ksiazka->id ?></td>
+            <td><?= $ksiazka->tytul ?></td>
+            <td><?= $ksiazka->imie ?> <?= $ksiazka->nazwisko ?></td>
+            <td><?= $ksiazka->cena ?></td>
+            <td><?= $ksiazka->liczba_stron ?></td>
+            <td>
+                <a href="<?= $this->url('ksiazki', ['action' => 'szczegoly', 'id' => $ksiazka->id]) ?>"
+                   title="szczegoly">szczegóły</a>
+                <!--template do szczegoly-->
+                <a href="<?= $this->url('ksiazki', ['action' => 'edytuj', 'id' => $ksiazka->id]) ?>"
+                   title="edytuj rekord">edytuj</a>
+                <a href="<?= $this->url('ksiazki', ['action' => 'usun', 'id' => $ksiazka->id]) ?>"
+                   title="usuń rekord"
+                >usuń</i></a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
