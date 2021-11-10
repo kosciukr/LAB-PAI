@@ -1,6 +1,6 @@
 Instrukcja:
 
-1 Przenieść folder pi do htdocs
+1 Przenieść folder pai do htdocs
 
 2 Z poziomu tego folderu w konsoli wykonać polecenie "composer install"
 
