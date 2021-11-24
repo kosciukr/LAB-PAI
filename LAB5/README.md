@@ -6,7 +6,7 @@ Instrukcja:
 
 3 Uruchomić xampp_start
 
-5 Obsługa z poziomu http://localhost/pai/public/oferty
+4 Obsługa z poziomu http://localhost/pai/public/oferty
 
 W przypadku problemów należy w pliku php.ini usunąć znak ";" z linijki ";extension=intl" i zrestartować xamppa
    
